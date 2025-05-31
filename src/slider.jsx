@@ -1,3 +1,4 @@
+import react from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
 
