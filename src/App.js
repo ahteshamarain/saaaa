@@ -1,10 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-
+import HeaderComponent from './header';
+import SliderComponent from './slider';
+import FooterComponent from './footer';
 function App() {
   return (
     <div className="App">
-     <h1>Ahtesham</h1>
+    <HeaderComponent></HeaderComponent>
+    <SliderComponent></SliderComponent>
+
+    <FooterComponent></FooterComponent>
+
     </div>
   );
 }
