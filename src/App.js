@@ -8,7 +8,6 @@ function App() {
     <div className="App">
     <HeaderComponent></HeaderComponent>
     <SliderComponent></SliderComponent>
-
     <FooterComponent></FooterComponent>
 
     </div>

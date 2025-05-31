@@ -5,4 +5,4 @@ function FooterComponent(){
         <h1>Footer</h1>
     )
 }
-export default FooterComponent();
+export default FooterComponent;

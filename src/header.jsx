@@ -5,4 +5,4 @@ function HeaderComponent(){
         <h1>Header</h1>
     )
 }
-export default HeaderComponent();
+export default HeaderComponent;

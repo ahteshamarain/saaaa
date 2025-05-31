@@ -5,4 +5,4 @@ function SliderComponent(){
         <h1>Slider</h1>
     )
 }
-export default SliderComponent();
+export default SliderComponent;
