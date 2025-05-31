@@ -5,12 +5,11 @@ import SliderComponent from './slider';
 import FooterComponent from './footer';
 function App() {
   return (
-    <div className="App">
-    <HeaderComponent></HeaderComponent>
-    <SliderComponent></SliderComponent>
+    <HeaderComponent></HeaderComponent>,
+    <SliderComponent></SliderComponent>,
     <FooterComponent></FooterComponent>
 
-    </div>
+  
   );
 }
 
