@@ -17,7 +17,7 @@ function App() {
     {
       img: img1,
       title: 'Pushpa',
-      detail: 'Pushpa The Raise.',
+      detail: 'Pushpa The Rise.',
       link: 'https://www.imdb.com/title/tt16539454/',
     },
     {
@@ -29,20 +29,19 @@ function App() {
     {
       img: img3,
       title: 'Rings',
-      detail: 'Suspense.',
+      detail: 'Suspense thriller movie.',
       link: 'https://www.pngegg.com/en/search?q=Thriller+film',
     },
   ];
 
   return (
     <>
-      {/* Optional: Include other components here */}
       <HeaderComponent />
       <SliderComponent />
       <ProductComponent />
 
-      <Container className="my-4">
-        <Row className="g-4">
+      <Container className="my-4 py-3">
+        <Row className="g-5">
           {cardsData.map((card, index) => (
             <Col key={index} xs={12} sm={6} md={4} lg={3}>
               <Props
