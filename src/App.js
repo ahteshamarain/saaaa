@@ -35,10 +35,12 @@ function App() {
   ];
 
   return (
-    <>
-      <HeaderComponent />
-      <SliderComponent />
-      <ProductComponent />
+  <div>
+    <HeaderComponent></HeaderComponent>
+    <SliderComponent></SliderComponent>
+    <ProductComponent></ProductComponent>
+
+
 
       <Container className="my-4 py-3">
         <Row className="g-5">
@@ -54,9 +56,8 @@ function App() {
           ))}
         </Row>
       </Container>
-
-      <FooterComponent />
-    </>
+     
+      </div>
   );
 }
 

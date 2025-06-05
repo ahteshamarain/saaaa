@@ -1,63 +1,58 @@
-import './App.css';
-import HeaderComponent from './header';
-import SliderComponent from './slider';
-import FooterComponent from './footer';
-import ProductComponent from './product';
-import Props from './props';
-
-import img1 from './images/img1.webp';
-import img2 from './images/img2.jpg';
-import img3 from './images/img3.png';
-
 import { Container, Row, Col } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
-function App() {
-  const cardsData = [
+function ProductComponent() {
+  const products = [
     {
-      img: img1,
-      title: 'Pushpa',
-      detail: 'Pushpa The Rise.',
-      link: 'https://www.imdb.com/title/tt16539454/',
+      id: 1,
+      pname: 'Product 1',
+      pprice: '$12',
+      img: 'https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp'
     },
     {
-      img: img2,
-      title: 'Luck',
-      detail: 'Live On Your Luck.',
-      link: 'https://example.com',
+      id: 2,
+      pname: 'Product 2',
+      pprice: '$20',
+      img: 'https://thumbs.dreamstime.com/b/celebrating-mother-earth-day-imagine-surreal-scene-where-colorful-radiant-enveloped-lush-nature-pristine-air-water-355597121.jpg'
     },
     {
-      img: img3,
-      title: 'Rings',
-      detail: 'Suspense thriller movie.',
-      link: 'https://www.pngegg.com/en/search?q=Thriller+film',
+      id: 3,
+      pname: 'Product 3',
+      pprice: '$15',
+      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQykzoZeCE0p7LeuyHnLYCdPP2jju9d5PaMeA&s'
     },
+    {
+      id: 4,
+      pname: 'Product 4',
+      pprice: '$18',
+      img: 'https://t4.ftcdn.net/jpg/09/26/54/37/360_F_926543705_dhMCOKqcJkcI5j1nF5gX1nvLbn374BHv.jpg'
+    }
   ];
 
   return (
-    <>
-      <HeaderComponent />
-      <SliderComponent />
-      <ProductComponent />
-
-      <Container className="my-4 py-3">
-        <Row className="g-5">
-          {cardsData.map((card, index) => (
-            <Col key={index} xs={12} sm={6} md={4} lg={3}>
-              <Props
-                img={card.img}
-                title={card.title}
-                detail={card.detail}
-                link={card.link}
+    <Container className="my-4">
+      <h2 className="text-center mb-4">Our Products</h2>
+      <Row className="g-4">
+        {products.map((product) => (
+          <Col key={product.id} xs={12} sm={6} md={4} lg={3}>
+            <Card style={{ width: '100%' }}>
+              <Card.Img
+                variant="top"
+                src={product.img}
+                style={{ height: '200px', objectFit: 'cover', width: '100%' }}
               />
-            </Col>
-          ))}
-        </Row>
-      </Container>
-
-      <FooterComponent />
-    </>
+              <Card.Body>
+                <Card.Title>{product.pname}</Card.Title>
+                <Card.Text>{product.pprice}</Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
+    </Container>
   );
 }
 
-export default App;
+export default ProductComponent;
