@@ -3,9 +3,8 @@ import HeaderComponent from './header';
 import SliderComponent from './slider';
 import FooterComponent from './footer';
 import ProductComponent from './product';
-
 import Props from './props';
-
+import Datec from './date';
 import img1 from './images/img1.webp';
 import img2 from './images/img2.jpg';
 import img3 from './images/img3.png';
@@ -57,6 +56,7 @@ function App() {
           ))}
         </Row>
       </Container>
+      <Datec /> 
     <FooterComponent></FooterComponent>
      
       </div>

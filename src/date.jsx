@@ -1,39 +1,36 @@
 import React from "react";
 
-function Datec(){
+function Datec() {
+  const fname = "AhteshamArain";
+  let current = new Date();
+  const hours = current.getHours();
+  const cssStyle = {};
+  let greet = "";
+  const randomNum = Math.random(); // fixed typo: radom → random
 
-    const fname = "AhteshamArain";
-    let current = new Date();
-    current = current.getHours();
-    var randonnum = Math.radom();
-    const cssStyle = {};
-    let greet = "";
+  if (hours >= 1 && hours < 12) {
+    greet = "Good Morning";
+    cssStyle.color = "red";
+    document.body.style.backgroundColor = "lightyellow";
+  } else if (hours >= 12 && hours < 19) {
+    greet = "Good Afternoon";
+    cssStyle.color = "blue";
+    document.body.style.backgroundColor = "lightblue";
+  } else {
+    greet = "Good Evening";
+    cssStyle.color = "green";
+    document.body.style.backgroundColor = "lightgray";
+  }
 
-    if(current>=1 && current < 13){
-     greet = "Good Morning";
-     cssStyle.color = "red";
-     document.body.style.backgroundColor = "lightyellow";
-    }
-    else if (current>=13 && current < 19){
-        greet = "Good Afternoon";
-        cssStyle.color = "red";
-        document.body.style.backgroundColor = "lightblue";
-
-       }
-
-
-
-    return(
-        <h1>
-        {randonnum}
-        <br />
-        {current}
-        <br />
-        {greet}
-        
-        
-        
-        </h1>
-    )
+  return (
+    <h1 style={cssStyle}>
+      Hello {fname}, {greet}!
+      <br />
+      Hour: {hours}
+      <br />
+      Random: {randomNum.toFixed(2)}
+    </h1>
+  );
 }
+
 export default Datec;
