@@ -9,12 +9,12 @@ function Datec(){
     const cssStyle = {};
     let greet = "";
 
-    if(current>=1 && current < 12){
+    if(current>=1 && current < 13){
      greet = "Good Morning";
      cssStyle.color = "red";
      document.body.style.backgroundColor = "lightyellow";
     }
-    else if (current>=12 && current < 19){
+    else if (current>=13 && current < 19){
         greet = "Good Afternoon";
         cssStyle.color = "red";
         document.body.style.backgroundColor = "lightblue";

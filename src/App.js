@@ -3,7 +3,6 @@ import HeaderComponent from './header';
 import SliderComponent from './slider';
 import FooterComponent from './footer';
 import ProductComponent from './product';
-import Datec from './date';
 
 import Props from './props';
 
@@ -58,7 +57,6 @@ function App() {
           ))}
         </Row>
       </Container>
-      <Datec></Datec>
     <FooterComponent></FooterComponent>
      
       </div>
