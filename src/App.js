@@ -5,6 +5,8 @@ import FooterComponent from './footer';
 import ProductComponent from './product';
 import Props from './props';
 import Datec from './date';
+import Football from './event';
+
 import img1 from './images/img1.webp';
 import img2 from './images/img2.jpg';
 import img3 from './images/img3.png';
@@ -48,7 +50,7 @@ function App() {
       <HeaderComponent />
       <SliderComponent />
       <ProductComponent />
-
+     
       <Container className="my-4 py-3">
         <Row className="g-5">
           {filteredCards.length > 0 ? (
@@ -71,6 +73,7 @@ function App() {
       </Container>
 
       <Datec />
+      <Football />
       <FooterComponent />
     </div>
   );
