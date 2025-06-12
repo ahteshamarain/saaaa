@@ -1,13 +1,13 @@
 import React from "react";
 
-function Football(){
-    const shoot = (a,b) =>{
-        alert(b.type = a);
-    }
-    return(
-        <button onClick={(event) => shoot("goal" , event)}>Take the shoot</button>
-    )
-}
+// function Football(){
+//     const shoot = (a,b) =>{
+//         alert(b.type = a);
+//     }
+//     return(
+//         <button onClick={(event) => shoot("goal" , event)}>Take the shoot</button>
+//     )
+// }
 function Football(){
    function handleClick(){
     let bodystyle = document.body.style;
