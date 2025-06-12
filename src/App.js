@@ -6,6 +6,8 @@ import ProductComponent from './product';
 import Props from './props';
 import Datec from './date';
 import Football from './event';
+import Addhook from './hook';
+
 
 import img1 from './images/img1.webp';
 import img2 from './images/img2.jpg';
@@ -74,6 +76,7 @@ function App() {
 
       <Datec />
       <Football />
+      <Addhook />
       <FooterComponent />
     </div>
   );
