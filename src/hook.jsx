@@ -4,13 +4,23 @@ function Addhook() {
 
     let [like, setLike] = useState(10);
 
+
+    
+
     return (
         <div>
             <button onClick={() => { setLike(like + 1); console.log(like) }}>
-                Like
+                Like decrease
             </button>
             <h1>{like}</h1>
-        </div>
+
+
+            <button onClick={() => { setLike(like - 1); console.log(like) }}>
+                Like decrease
+            </button>
+            <h1>{like}</h1>
+
+</div>
     );
 }
 
