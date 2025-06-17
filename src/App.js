@@ -8,6 +8,8 @@ import Datec from './date';
 import Football from './event';
 import Addhook from './hook';
 import EmployeeSalary from './salarystate';
+import Blog from './form';
+
 
 
 
@@ -81,6 +83,7 @@ function App() {
       <Addhook />
       <EmployeeSalary />
       <FooterComponent />
+      <Blog />
     </div>
   );
 }
