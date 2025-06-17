@@ -9,6 +9,8 @@ import Football from './event';
 import Addhook from './hook';
 import EmployeeSalary from './salarystate';
 import Blog from './form';
+import Login from './login';
+
 
 
 
@@ -84,6 +86,7 @@ function App() {
       <EmployeeSalary />
       <FooterComponent />
       <Blog />
+      <Login />
     </div>
   );
 }
