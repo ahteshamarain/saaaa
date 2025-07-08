@@ -1,18 +1,20 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";  // <-- import this
 
 function Login() {
-
     let [email, setemail] = useState('');
     let [password, setpass] = useState('');
+    const navigate = useNavigate();  // <-- initialize
 
     return (
         <form onSubmit={(event) => {
             event.preventDefault();
             const blogdata = { email, password };
-            console.log(blogdata); // Logs email & password
+            console.log(blogdata);
 
             if (email === "ahteshamarain3@gmail.com" && password === "aptech") {
                 console.log("Login Successful");
+                navigate('/loginview');  // <-- redirect on success
             } else {
                 console.log("Invalid Credentials");
             }
@@ -29,7 +31,7 @@ function Login() {
 
             <label>Enter Password</label>
             <input 
-                type="text" 
+                type="password"  // password field mein type="password" use karen
                 required 
                 onChange={(event) => setpass(event.target.value)} 
                 value={password} 
