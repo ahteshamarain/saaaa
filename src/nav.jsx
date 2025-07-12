@@ -27,6 +27,7 @@ function Nav() {
       <NavLink exact to="/login" activeClassName="active" className="nav-link">Login</NavLink>
 
       </li>
+    
       <li className="nav-item">
         <a className="nav-link disabled" href="#">Disabled</a>
       </li>

@@ -122,7 +122,9 @@ import Layout from './layout';
 import Home from './home';
 import Contact from './contact';
 import Moviedetail from './moviedetails';
-import MovieList from './netflix';
+import MovieList from './fetchmovie';
+
+
 import Loginview from './viewlogin';
 import Login from './login';
 
@@ -143,6 +145,10 @@ function App() {
          <Route path="/contact" element={<Contact/>}></Route>
          <Route path="/movie" element={<MovieList/>}></Route>
          <Route path="/login" element={<Login/>}></Route>
+         
+
+     
+
 
          <Route path="/loginview" element={<Loginview/>}></Route>
 

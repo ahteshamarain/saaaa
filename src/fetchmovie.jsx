@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './netflix';
+import Movie from './netflix';
 import { useEffect, useState } from 'react';
 function MovieList() {
     
@@ -24,7 +24,7 @@ function MovieList() {
         <div className="row">
           {movie.map((mov, index) => (
             <div className="col-md-4" key={index}>
-              <Card
+              <Movie
                 imgsrc={mov.imgsrc}
                 title={mov.title}
                 name={mov.name}
